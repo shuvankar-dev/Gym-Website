@@ -15,3 +15,40 @@
     --text-color: #fff;
     --main-color: #45ffca;
 }
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 8% 2rem;
+}
+ /* Header section code */
+ header{
+    position: fixed;
+    width: 1000%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+ }
+ .logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+ }
+ .logo:hover{
+    transform: scale(1.1);
+ }
